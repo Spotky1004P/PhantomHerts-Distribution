@@ -1,0 +1,11 @@
+{
+  "$schema": "file:///D:/Launcher_Comm/PhantomHearts/PhantomHerts-Distribution/schemas/DistroMetaSchema.schema.json",
+  "meta": {
+    "rss": "<LINK TO RSS FEED>",
+    "discord": {
+      "clientId": "1163104675738943570",
+      "smallImageText": "Phanton Hearts | 1.12.2",
+      "smallImageKey": "icon"
+    }
+  }
+}
