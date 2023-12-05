@@ -8,15 +8,15 @@
   },
   "servers": [
     {
-      "id": "PhantomHearts-1.12.2",
-      "name": "PhantomHearts (Minecraft 1.12.2)",
-      "description": "PhantomHearts Running Minecraft 1.12.2 (Forge v14.23.5.2860)",
-      "icon": null,
+      "id": "PhantomHearts-1.20.1",
+      "name": "PhantomHearts (Minecraft 1.20.1)",
+      "description": "PhantomHearts 서버 접속용 모드팩",
+      "icon": "https://cdn.discordapp.com/attachments/1154696181474132008/1154704283149815828/8157151bc9092f76.png",
       "version": "1.0.0",
       "address": "phworld.kro.kr",
-      "minecraftVersion": "1.12.2",
+      "minecraftVersion": "1.20.1",
       "discord": {
-        "shortId": "Phantom Hearts 서버 | 1.12.2",
+        "shortId": "Phantom Hearts 서버 | 1.20.1",
         "largeImageText": "Phantom Hearts 서버",
         "largeImageKey": "icon"
       },
@@ -24,315 +24,552 @@
       "autoconnect": true,
       "modules": [
         {
-          "id": "net.minecraftforge:forge:1.12.2-14.23.5.2860:universal",
-          "name": "Minecraft Forge",
+          "id": "net.minecraftforge:lowcodelanguage:1.20.1-47.2.17",
+          "name": "Minecraft Forge (lowcodelanguage)",
           "type": "ForgeHosted",
+          "classpath": true,
           "artifact": {
-            "size": 4466148,
-            "MD5": "2b5b6ccfa3c6ffcea9073d13d1ec5236",
-            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraftforge/forge/1.12.2-14.23.5.2860/forge-1.12.2-14.23.5.2860-universal.jar"
+            "size": 7400,
+            "MD5": "5710f82c0bb6947749f9cf9b7600da1f",
+            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraftforge/lowcodelanguage/1.20.1-47.2.17/lowcodelanguage-1.20.1-47.2.17.jar"
           },
           "subModules": [
             {
-              "id": "1.12.2-14.23.5.2860",
+              "id": "1.20.1-47.2.17",
               "name": "Minecraft Forge (version.json)",
               "type": "VersionManifest",
               "artifact": {
-                "size": 11799,
-                "MD5": "fdf65dd024faa5c9a51372e5fb975dfe",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/versions/1.12.2-forge-14.23.5.2860/1.12.2-forge-14.23.5.2860.json"
+                "size": 16554,
+                "MD5": "2cfab091bd073243ed059d594182644a",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/versions/1.20.1-forge-47.2.17/1.20.1-forge-47.2.17.json"
               }
             },
             {
-              "id": "org.ow2.asm:asm-debug-all:5.2@jar",
-              "name": "Minecraft Forge (asm-debug-all)",
+              "id": "net.minecraftforge:fmlcore:1.20.1-47.2.17",
+              "name": "Minecraft Forge (fmlcore)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 117592,
+                "MD5": "d0c1d22b5eb6baa036f1907f5392e365",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraftforge/fmlcore/1.20.1-47.2.17/fmlcore-1.20.1-47.2.17.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:javafmllanguage:1.20.1-47.2.17",
+              "name": "Minecraft Forge (javafmllanguage)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 16517,
+                "MD5": "3337d152e7b3a7b7948d01bc9e22de83",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraftforge/javafmllanguage/1.20.1-47.2.17/javafmllanguage-1.20.1-47.2.17.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:mclanguage:1.20.1-47.2.17",
+              "name": "Minecraft Forge (mclanguage)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 4999,
+                "MD5": "da923126bb29aabdf2f6df7604e41965",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraftforge/mclanguage/1.20.1-47.2.17/mclanguage-1.20.1-47.2.17.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:forge:1.20.1-47.2.17:universal",
+              "name": "Minecraft Forge (universal jar)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 2678725,
+                "MD5": "f90b7af609a63c76e7bf76694b2d8fbf",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraftforge/forge/1.20.1-47.2.17/forge-1.20.1-47.2.17-universal.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:forge:1.20.1-47.2.17:client",
+              "name": "Minecraft Forge (client jar)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 4791456,
+                "MD5": "e39b83ff926e393c3e4506cc24a310b0",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraftforge/forge/1.20.1-47.2.17/forge-1.20.1-47.2.17-client.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraft:client:1.20.1-20230612.114412:srg",
+              "name": "Minecraft Forge (client srg)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 18842082,
+                "MD5": "8bfacfba4f54cda741019756165c5ecf",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraft/client/1.20.1-20230612.114412/client-1.20.1-20230612.114412-srg.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraft:client:1.20.1-20230612.114412:slim",
+              "name": "Minecraft Forge (client slim)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 12592249,
+                "MD5": "28edebec7b5a007bc9961ee9bab4d764",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraft/client/1.20.1-20230612.114412/client-1.20.1-20230612.114412-slim.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraft:client:1.20.1-20230612.114412:extra",
+              "name": "Minecraft Forge (client extra)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 10436626,
+                "MD5": "da6bb1a2c23108392fd6c103da40867c",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraft/client/1.20.1-20230612.114412/client-1.20.1-20230612.114412-extra.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "cpw.mods:securejarhandler:2.1.10",
+              "name": "Minecraft Forge (securejarhandler)",
               "type": "Library",
               "artifact": {
-                "size": 387903,
-                "MD5": "fe5f20404ccdee9769ef05dc4b47ba98",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/ow2/asm/asm-debug-all/5.2/asm-debug-all-5.2.jar"
+                "size": 88749,
+                "MD5": "d9ff48d1c68388270388b803fa42611e",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/cpw/mods/securejarhandler/2.1.10/securejarhandler-2.1.10.jar"
               }
             },
             {
-              "id": "net.minecraft:launchwrapper:1.12@jar",
-              "name": "Minecraft Forge (launchwrapper)",
+              "id": "org.ow2.asm:asm:9.5",
+              "name": "Minecraft Forge (asm)",
               "type": "Library",
               "artifact": {
-                "size": 32999,
-                "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar"
+                "size": 121863,
+                "MD5": "29721ee4b5eacf0a34b204c345c8bc69",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/ow2/asm/asm/9.5/asm-9.5.jar"
               }
             },
             {
-              "id": "org.jline:jline:3.5.1@jar",
-              "name": "Minecraft Forge (jline)",
+              "id": "org.ow2.asm:asm-commons:9.5",
+              "name": "Minecraft Forge (asm-commons)",
               "type": "Library",
               "artifact": {
-                "size": 614590,
-                "MD5": "4c20d2879ed2bd75a0771ce29e89f6b0",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/jline/jline/3.5.1/jline-3.5.1.jar"
+                "size": 72209,
+                "MD5": "7d1fce986192f71722b19754e4cb9e61",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/ow2/asm/asm-commons/9.5/asm-commons-9.5.jar"
               }
             },
             {
-              "id": "com.typesafe.akka:akka-actor_2.11:2.3.3@jar",
-              "name": "Minecraft Forge (akka-actor_2.11)",
+              "id": "org.ow2.asm:asm-tree:9.5",
+              "name": "Minecraft Forge (asm-tree)",
               "type": "Library",
               "artifact": {
-                "size": 2514991,
-                "MD5": "541440ca0819ebada47d6d1a8b3ee9e1",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/com/typesafe/akka/akka-actor_2.11/2.3.3/akka-actor_2.11-2.3.3.jar"
+                "size": 51944,
+                "MD5": "44755681b7d6fa7143afbb438e55c20c",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/ow2/asm/asm-tree/9.5/asm-tree-9.5.jar"
               }
             },
             {
-              "id": "com.typesafe:config:1.2.1@jar",
-              "name": "Minecraft Forge (config)",
+              "id": "org.ow2.asm:asm-util:9.5",
+              "name": "Minecraft Forge (asm-util)",
               "type": "Library",
               "artifact": {
-                "size": 219554,
-                "MD5": "3aaf3c6e76a68e732c17d4a7e9877d81",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/com/typesafe/config/1.2.1/config-1.2.1.jar"
+                "size": 91076,
+                "MD5": "ad0016249fb68bb9196babefd47b80dc",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/ow2/asm/asm-util/9.5/asm-util-9.5.jar"
               }
             },
             {
-              "id": "org.scala-lang:scala-actors-migration_2.11:1.1.0@jar",
-              "name": "Minecraft Forge (scala-actors-migration_2.11)",
+              "id": "org.ow2.asm:asm-analysis:9.5",
+              "name": "Minecraft Forge (asm-analysis)",
               "type": "Library",
               "artifact": {
-                "size": 58018,
-                "MD5": "f5e79398daa1806f8b17311a3c782723",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/scala-lang/scala-actors-migration_2.11/1.1.0/scala-actors-migration_2.11-1.1.0.jar"
+                "size": 33978,
+                "MD5": "4df0adafc78ebba404d4037987d36b61",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/ow2/asm/asm-analysis/9.5/asm-analysis-9.5.jar"
               }
             },
             {
-              "id": "org.scala-lang:scala-compiler:2.11.1@jar",
-              "name": "Minecraft Forge (scala-compiler)",
+              "id": "net.minecraftforge:accesstransformers:8.0.4",
+              "name": "Minecraft Forge (accesstransformers)",
               "type": "Library",
               "artifact": {
-                "size": 13449765,
-                "MD5": "06030143bf86ca896fb6ccfd679b5760",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/scala-lang/scala-compiler/2.11.1/scala-compiler-2.11.1.jar"
+                "size": 77756,
+                "MD5": "f0d3533f9437ba4428eaee9f28f7ecd9",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraftforge/accesstransformers/8.0.4/accesstransformers-8.0.4.jar"
               }
             },
             {
-              "id": "org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2_mc@jar",
-              "name": "Minecraft Forge (scala-continuations-library_2.11)",
+              "id": "org.antlr:antlr4-runtime:4.9.1",
+              "name": "Minecraft Forge (antlr4-runtime)",
               "type": "Library",
               "artifact": {
-                "size": 25365,
-                "MD5": "004d7007abbcee858d3ca2c3ccbcbaab",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/scala-lang/plugins/scala-continuations-library_2.11/1.0.2_mc/scala-continuations-library_2.11-1.0.2_mc.jar"
+                "size": 337868,
+                "MD5": "0dcc4b860d5d8d2852ab94d58c56ca2d",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/antlr/antlr4-runtime/4.9.1/antlr4-runtime-4.9.1.jar"
               }
             },
             {
-              "id": "org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2_mc@jar",
-              "name": "Minecraft Forge (scala-continuations-plugin_2.11.1)",
+              "id": "net.minecraftforge:eventbus:6.0.5",
+              "name": "Minecraft Forge (eventbus)",
               "type": "Library",
               "artifact": {
-                "size": 206575,
-                "MD5": "359c4a6743a082c689039482eed78670",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/scala-lang/plugins/scala-continuations-plugin_2.11.1/1.0.2_mc/scala-continuations-plugin_2.11.1-1.0.2_mc.jar"
+                "size": 53985,
+                "MD5": "2a6245210b446b2144071e71ca13432b",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraftforge/eventbus/6.0.5/eventbus-6.0.5.jar"
               }
             },
             {
-              "id": "org.scala-lang:scala-library:2.11.1@jar",
-              "name": "Minecraft Forge (scala-library)",
+              "id": "net.minecraftforge:forgespi:7.0.1",
+              "name": "Minecraft Forge (forgespi)",
               "type": "Library",
               "artifact": {
-                "size": 5538130,
-                "MD5": "1d88f665219e6006c5dd82d71c525c0f",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/scala-lang/scala-library/2.11.1/scala-library-2.11.1.jar"
+                "size": 29831,
+                "MD5": "bd34d20287dc95201fe9475a8bbc2540",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraftforge/forgespi/7.0.1/forgespi-7.0.1.jar"
               }
             },
             {
-              "id": "org.scala-lang:scala-parser-combinators_2.11:1.0.1@jar",
-              "name": "Minecraft Forge (scala-parser-combinators_2.11)",
+              "id": "net.minecraftforge:coremods:5.0.1",
+              "name": "Minecraft Forge (coremods)",
               "type": "Library",
               "artifact": {
-                "size": 419701,
-                "MD5": "4e694499c965af4a02599c99d4f0b196",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/scala-lang/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1.jar"
+                "size": 24199,
+                "MD5": "8c590051c5d65e098ca7c2e3ddf803a8",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraftforge/coremods/5.0.1/coremods-5.0.1.jar"
               }
             },
             {
-              "id": "org.scala-lang:scala-reflect:2.11.1@jar",
-              "name": "Minecraft Forge (scala-reflect)",
+              "id": "cpw.mods:modlauncher:10.0.9",
+              "name": "Minecraft Forge (modlauncher)",
               "type": "Library",
               "artifact": {
-                "size": 4372892,
-                "MD5": "7878fac044e4e4b576bb35a77ccc34fc",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/scala-lang/scala-reflect/2.11.1/scala-reflect-2.11.1.jar"
+                "size": 130343,
+                "MD5": "07507d18d72661f8ae6a5da75bbf35be",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/cpw/mods/modlauncher/10.0.9/modlauncher-10.0.9.jar"
               }
             },
             {
-              "id": "org.scala-lang:scala-swing_2.11:1.0.1@jar",
-              "name": "Minecraft Forge (scala-swing_2.11)",
+              "id": "net.minecraftforge:unsafe:0.2.0",
+              "name": "Minecraft Forge (unsafe)",
               "type": "Library",
               "artifact": {
-                "size": 726500,
-                "MD5": "1009d69e4948045383f2a7a334348af5",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/scala-lang/scala-swing_2.11/1.0.1/scala-swing_2.11-1.0.1.jar"
+                "size": 2834,
+                "MD5": "2d1016ebe4c1a63dd50a59d26bd12db1",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraftforge/unsafe/0.2.0/unsafe-0.2.0.jar"
               }
             },
             {
-              "id": "org.scala-lang:scala-xml_2.11:1.0.2@jar",
-              "name": "Minecraft Forge (scala-xml_2.11)",
+              "id": "net.minecraftforge:mergetool:1.1.5:api",
+              "name": "Minecraft Forge (mergetool)",
               "type": "Library",
               "artifact": {
-                "size": 648679,
-                "MD5": "c2d7e66495afe14545c31b21e99879ef",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/scala-lang/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar"
+                "size": 2572,
+                "MD5": "8df9c5bf87d004ddb884eca99bc2a4b1",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraftforge/mergetool/1.1.5/mergetool-1.1.5-api.jar"
               }
             },
             {
-              "id": "lzma:lzma:0.0.1@jar",
-              "name": "Minecraft Forge (lzma)",
+              "id": "com.electronwill.night-config:core:3.6.4",
+              "name": "Minecraft Forge (core)",
               "type": "Library",
               "artifact": {
-                "size": 5762,
-                "MD5": "a3e3c3186e41c4a1a3027ba2bb23cdc6",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/lzma/lzma/0.0.1/lzma-0.0.1.jar"
+                "size": 199834,
+                "MD5": "d83ab07267e402131fb93d899a57f5cd",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/com/electronwill/night-config/core/3.6.4/core-3.6.4.jar"
               }
             },
             {
-              "id": "java3d:vecmath:1.5.2@jar",
-              "name": "Minecraft Forge (vecmath)",
+              "id": "com.electronwill.night-config:toml:3.6.4",
+              "name": "Minecraft Forge (toml)",
               "type": "Library",
               "artifact": {
-                "size": 318956,
-                "MD5": "e5d2b7f46c4800a32f62ce75676a5710",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/java3d/vecmath/1.5.2/vecmath-1.5.2.jar"
+                "size": 31816,
+                "MD5": "bc95d0709fff2164b01fd09fbc988be8",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/com/electronwill/night-config/toml/3.6.4/toml-3.6.4.jar"
               }
             },
             {
-              "id": "net.sf.trove4j:trove4j:3.0.3@jar",
-              "name": "Minecraft Forge (trove4j)",
-              "type": "Library",
-              "artifact": {
-                "size": 2523218,
-                "MD5": "8fc4d4e0129244f9fd39650c5f30feb2",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar"
-              }
-            },
-            {
-              "id": "org.apache.maven:maven-artifact:3.5.3@jar",
+              "id": "org.apache.maven:maven-artifact:3.8.5",
               "name": "Minecraft Forge (maven-artifact)",
               "type": "Library",
               "artifact": {
-                "size": 54961,
-                "MD5": "7741ebf29690ee7d9dde9cf4376347fc",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/apache/maven/maven-artifact/3.5.3/maven-artifact-3.5.3.jar"
+                "size": 58077,
+                "MD5": "ce473b0d9fbfd10fe147f03fe8707d67",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/apache/maven/maven-artifact/3.8.5/maven-artifact-3.8.5.jar"
               }
             },
             {
-              "id": "net.sf.jopt-simple:jopt-simple:5.0.3@jar",
-              "name": "Minecraft Forge (jopt-simple)",
+              "id": "net.jodah:typetools:0.6.3",
+              "name": "Minecraft Forge (typetools)",
               "type": "Library",
               "artifact": {
-                "size": 78175,
-                "MD5": "0a5ec84e23df9d7cfb4063bc55f2744c",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar"
+                "size": 18281,
+                "MD5": "d4a375bf382f726cf1a650ccb38a736c",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/jodah/typetools/0.6.3/typetools-0.6.3.jar"
               }
             },
             {
-              "id": "org.apache.logging.log4j:log4j-api:2.15.0@jar",
-              "name": "Minecraft Forge (log4j-api)",
+              "id": "net.minecrell:terminalconsoleappender:1.2.0",
+              "name": "Minecraft Forge (terminalconsoleappender)",
               "type": "Library",
               "artifact": {
-                "size": 301804,
-                "MD5": "a9ccfa7e3382dd2b9e0647a43d8286d7",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/apache/logging/log4j/log4j-api/2.15.0/log4j-api-2.15.0.jar"
+                "size": 15977,
+                "MD5": "679363fa893293791e55a21f81342f87",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecrell/terminalconsoleappender/1.2.0/terminalconsoleappender-1.2.0.jar"
               }
             },
             {
-              "id": "org.apache.logging.log4j:log4j-core:2.15.0@jar",
-              "name": "Minecraft Forge (log4j-core)",
+              "id": "org.jline:jline-reader:3.12.1",
+              "name": "Minecraft Forge (jline-reader)",
               "type": "Library",
               "artifact": {
-                "size": 1789769,
-                "MD5": "81e0433ae00602c0e4d00424d213b0ab",
-                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/apache/logging/log4j/log4j-core/2.15.0/log4j-core-2.15.0.jar"
+                "size": 150765,
+                "MD5": "a2e7b012cd9802f83321187409174a94",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/jline/jline-reader/3.12.1/jline-reader-3.12.1.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline-terminal:3.12.1",
+              "name": "Minecraft Forge (jline-terminal)",
+              "type": "Library",
+              "artifact": {
+                "size": 211712,
+                "MD5": "3c52be5ab5e3847be6e62269de924cb0",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/jline/jline-terminal/3.12.1/jline-terminal-3.12.1.jar"
+              }
+            },
+            {
+              "id": "org.spongepowered:mixin:0.8.5",
+              "name": "Minecraft Forge (mixin)",
+              "type": "Library",
+              "artifact": {
+                "size": 1089277,
+                "MD5": "19b3a2ae9e445a6e626fd7d1648cfcb8",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar"
+              }
+            },
+            {
+              "id": "org.openjdk.nashorn:nashorn-core:15.3",
+              "name": "Minecraft Forge (nashorn-core)",
+              "type": "Library",
+              "artifact": {
+                "size": 2167288,
+                "MD5": "91e98c20afa1090c344229ce28b4c53f",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/org/openjdk/nashorn/nashorn-core/15.3/nashorn-core-15.3.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:JarJarSelector:0.3.19",
+              "name": "Minecraft Forge (JarJarSelector)",
+              "type": "Library",
+              "artifact": {
+                "size": 17374,
+                "MD5": "2bb6cbe0e6c6fbcd8f92d2e6b1ea678e",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraftforge/JarJarSelector/0.3.19/JarJarSelector-0.3.19.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:JarJarMetadata:0.3.19",
+              "name": "Minecraft Forge (JarJarMetadata)",
+              "type": "Library",
+              "artifact": {
+                "size": 15895,
+                "MD5": "9633546d299d4282ca68d10582be1c8f",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraftforge/JarJarMetadata/0.3.19/JarJarMetadata-0.3.19.jar"
+              }
+            },
+            {
+              "id": "cpw.mods:bootstraplauncher:1.1.2",
+              "name": "Minecraft Forge (bootstraplauncher)",
+              "type": "Library",
+              "artifact": {
+                "size": 8284,
+                "MD5": "48f5255aa337344c467c0150d347813d",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/cpw/mods/bootstraplauncher/1.1.2/bootstraplauncher-1.1.2.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:JarJarFileSystems:0.3.19",
+              "name": "Minecraft Forge (JarJarFileSystems)",
+              "type": "Library",
+              "artifact": {
+                "size": 32195,
+                "MD5": "c2be1a88b63eb1b58b00ab6e498cd97d",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraftforge/JarJarFileSystems/0.3.19/JarJarFileSystems-0.3.19.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:fmlloader:1.20.1-47.2.17",
+              "name": "Minecraft Forge (fmlloader)",
+              "type": "Library",
+              "artifact": {
+                "size": 264185,
+                "MD5": "5f98de4ae3e3e180fc4d5db2fb7afa89",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraftforge/fmlloader/1.20.1-47.2.17/fmlloader-1.20.1-47.2.17.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:fmlearlydisplay:1.20.1-47.2.17",
+              "name": "Minecraft Forge (fmlearlydisplay)",
+              "type": "Library",
+              "artifact": {
+                "size": 170552,
+                "MD5": "c08f29605d3d8ba3ae7f4485c160f391",
+                "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/repo/lib/net/minecraftforge/fmlearlydisplay/1.20.1-47.2.17/fmlearlydisplay-1.20.1-47.2.17.jar"
               }
             }
           ]
         },
         {
-          "id": "guichaguri.betterfps:betterfps:1.4.8@jar",
-          "name": "BetterFps",
+          "id": "com.github.alexthe666:alexsmobs:1.22.6@jar",
+          "name": "Alex's Mobs",
           "type": "ForgeMod",
           "artifact": {
-            "size": 155196,
-            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.12.2/forgemods/required/BetterFps-1.4.8.jar",
-            "MD5": "d36f4d3c0f96e99a9a1ad2e8eeda1fc4"
+            "size": 25797308,
+            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.20.1/forgemods/required/alexsmobs-1.22.6.jar",
+            "MD5": "59633540598370dfd9fe99e894d64725"
           }
         },
         {
-          "id": "team.chisel:ctm:MC1.12.2-1.0.2.31@jar",
-          "name": "CTM",
+          "id": "moe.plushie.armourers_workshop.init.platform:armourers_workshop:2.0.7@jar",
+          "name": "Armourer's Workshop",
           "type": "ForgeMod",
           "artifact": {
-            "size": 199045,
-            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.12.2/forgemods/required/CTM-MC1.12.2-1.0.2.31.jar",
-            "MD5": "77a8bb5486c97e3eaa6f45e5bd768864"
+            "size": 3541553,
+            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.20.1/forgemods/required/armourersworkshop-forge-1.20.1-2.0.7.jar",
+            "MD5": "f83e851aade1107d6d04b0720dfb673d"
           }
         },
         {
-          "id": "creo.mod:koreanchat:1.12-1.9@jar",
-          "name": "Korean Chat",
+          "id": "net.blay09.mods:balm:7.0.4@jar",
+          "name": "Balm",
           "type": "ForgeMod",
           "artifact": {
-            "size": 30763,
-            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.12.2/forgemods/required/koreanchat-creo-1.12-1.9%20(1).jar",
-            "MD5": "91492de16021a4f7018eb5d523f45fc2"
+            "size": 330776,
+            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.20.1/forgemods/required/balm-forge-1.20-7.0.4.jar",
+            "MD5": "af0d754ff6ec682e95883c89cbf9ecb7"
           }
         },
         {
-          "id": "skywolf46.skinupdate:skinupdater:1.0.0@jar",
-          "name": "SkinUpdater",
+          "id": "biomesoplenty.core:biomesoplenty:18.0.0.573@jar",
+          "name": "Biomes O' Plenty",
           "type": "ForgeMod",
           "artifact": {
-            "size": 11480,
-            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.12.2/forgemods/required/SkinUpdater-Forge-1.0.0.jar",
-            "MD5": "3c78567e07ab2c3a62a0e35127f35867"
+            "size": 21795355,
+            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.20.1/forgemods/required/BiomesOPlenty-1.20.1-18.0.0.573.jar",
+            "MD5": "d9c3177c8a1aac70f9ad7615db252e24"
           }
         },
         {
-          "id": "texfix:texfix:4.0@jar",
-          "name": "TextureFix",
+          "id": "com.mrcrayfish:catalogue:1.8.0@jar",
+          "name": "Catalogue",
           "type": "ForgeMod",
           "artifact": {
-            "size": 7052,
-            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.12.2/forgemods/required/TexFixV-1.12-4.0.jar",
-            "MD5": "241a28a767464fa15f9bd642c2d9f673"
+            "size": 240394,
+            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.20.1/forgemods/required/catalogue-forge-1.20.1-1.8.0.jar",
+            "MD5": "524efc6bbcd6da51e86cbf3183587330"
           }
         },
         {
-          "id": "org.dimdev:vanillafix:1.0.10-150@jar",
-          "name": "VanillaFix",
+          "id": "com.mrcrayfish.furniture:cfm:7.0.0-pre36@jar",
+          "name": "MrCrayfish's Furniture Mod",
           "type": "ForgeMod",
           "artifact": {
-            "size": 1025896,
-            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.12.2/forgemods/required/VanillaFix-1.0.10-150.jar",
-            "MD5": "a74aaab68100e03f54e35d1007d50169"
+            "size": 2613393,
+            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.20.1/forgemods/required/cfm-forge-1.20.1-7.0.0-pre36.jar",
+            "MD5": "faf78627dad9c9c04e7a4fa8992c54dc"
           }
         },
         {
-          "id": "skywolf46.voiceline:voiceline:1.0.0@jar",
-          "name": "VoiceLine",
+          "id": "com.github.alexthe666:citadel:2.4.7@jar",
+          "name": "Citadel",
           "type": "ForgeMod",
           "artifact": {
-            "size": 42548,
-            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.12.2/forgemods/required/VoiceLineMod.jar",
-            "MD5": "40bef991f0296fe211e826e5d8f81fc0"
+            "size": 3073912,
+            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.20.1/forgemods/required/citadel-2.4.7-1.20.1.jar",
+            "MD5": "2e945948980a204d988b4810ed0925da"
           }
         },
         {
-          "id": "generated.library:OptiFine_1.12.2_HD_U_G5_MOD:0.0.0@jar",
-          "name": "OptiFine_1.12.2_HD_U_G5_MOD",
-          "type": "Library",
+          "id": "jp.axer.cocoainput.loader:cocoainput:4.3.0-EXPERIMENTAL@jar",
+          "name": "CocoaInput",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 2457427,
-            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.12.2/libraries/OptiFine_1.12.2_HD_U_G5_MOD.jar",
-            "MD5": "aefaa99c48165cf8ae881cf4320c4b08"
+            "size": 209526,
+            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.20.1/forgemods/required/CocoaInput-1.20.1-forge-4.3.0-EXPERIMENTAL.jar",
+            "MD5": "6d99af15a96820cbe31ac8a8150a3d43"
+          }
+        },
+        {
+          "id": "vectorwing.farmersdelight:farmersdelight:1.20.1-1.2.3@jar",
+          "name": "Farmer's Delight",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 2898860,
+            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.20.1/forgemods/required/FarmersDelight-1.20.1-1.2.3.jar",
+            "MD5": "3fa71a0df7af96333247851c6e168f9c"
+          }
+        },
+        {
+          "id": "journeymap:journeymap:5.9.17@jar",
+          "name": "Journeymap",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 7137815,
+            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.20.1/forgemods/required/journeymap-1.20.1-5.9.17-forge.jar",
+            "MD5": "753cfb9d2a78219fceeec3f21187c57d"
+          }
+        },
+        {
+          "id": "com.github.l_ender:cataclysm:1.0@jar",
+          "name": "Cataclysm Mod",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 32482687,
+            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.20.1/forgemods/required/L_Enders_Cataclysm-1.39+-1.20.1.jar",
+            "MD5": "90411cf4a851bc4b809cef6b30dc944f"
+          }
+        },
+        {
+          "id": "terrablender.core:terrablender:3.0.0.164@jar",
+          "name": "TerraBlender",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 105369,
+            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.20.1/forgemods/required/TerraBlender-forge-1.20.1-3.0.0.164.jar",
+            "MD5": "2dc45b42953cbf41dd68dcaa2ecc3e25"
+          }
+        },
+        {
+          "id": "de.maxhenkel:voicechat:1.20.1-2.4.28@jar",
+          "name": "Simple Voice Chat",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 7654111,
+            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.20.1/forgemods/required/voicechat-forge-1.20.1-2.4.28.jar",
+            "MD5": "112c51d3f202e40a06cd8bbcc71693c8"
+          }
+        },
+        {
+          "id": "net.blay09.mods:waystones:14.0.0@jar",
+          "name": "Waystones",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 437267,
+            "url": "https://github.com/Spotky1004P/PhantomHerts-Distribution/raw/main/servers/PhantomHearts-1.20.1/forgemods/required/waystones-forge-1.20-14.0.0.jar",
+            "MD5": "6a5380f8d56fed8b40139d78d5b06477"
           }
         }
       ]

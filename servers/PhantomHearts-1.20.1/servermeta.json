@@ -1,0 +1,21 @@
+{
+  "$schema": "file:///D:/Launcher_Comm/PhantomHearts/PhantomHerts-Distribution/schemas/ServerMetaSchema.schema.json",
+  "meta": {
+    "version": "1.0.0",
+    "name": "PhantomHearts (Minecraft 1.20.1)",
+    "description": "PhantomHearts 서버 접속용 모드팩",
+    "icon": "https://cdn.discordapp.com/attachments/1154696181474132008/1154704283149815828/8157151bc9092f76.png",
+    "address": "phworld.kro.kr",
+    "discord": {
+      "shortId": "Phantom Hearts 서버 | 1.20.1",
+      "largeImageText": "Phantom Hearts 서버",
+      "largeImageKey": "icon"
+    },
+    "mainServer": true,
+    "autoconnect": true
+  },
+  "forge": {
+    "version": "47.2.17"
+  },
+  "untrackedFiles": []
+}
